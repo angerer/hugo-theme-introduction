@@ -44,7 +44,7 @@
 
         {{ with .Site.GetPage "/home" }}
         {{ $home := . }}
-        {{ $pages := .Resources.ByType "page" }}
+        {{ $pages := where (.Resources.ByType "page") "Draft" false }}
 
         {{ with .Site.GetPage "/blog" }}
             {{ $pages = $pages | append . }}
