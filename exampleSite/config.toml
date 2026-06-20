@@ -112,8 +112,8 @@ DefaultContentLanguage           = "en"                    # Default language fo
 
 [languages]
     [languages.en]
-        languageName     = "English"
-        languageCode     = "en-us"
+        label     = "English"
+        locale     = "en-us"
         contentDir       = "content/en"
         weight           = 0
         title            = "Introduction"
@@ -122,8 +122,8 @@ DefaultContentLanguage           = "en"                    # Default language fo
             # footerText   = ""                      # Text to override default footer text (markdown allowed)
 
     [languages.es]
-        languageName     = "Español"
-        languageCode     = "es"
+        label     = "Español"
+        locale     = "es"
         contentDir       = "content/es"
         weight           = 1
         title            = "Introducción"
@@ -132,8 +132,8 @@ DefaultContentLanguage           = "en"                    # Default language fo
             # footerText   = ""
 
     [languages.de]
-        languageName     = "Deutsch"
-        languageCode     = "de"
+        label     = "Deutsch"
+        locale     = "de"
         contentDir       = "content/de"
         weight           = 2
         title            = "Vorstellung"
