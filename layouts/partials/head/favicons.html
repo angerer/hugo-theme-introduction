@@ -1,3 +1,5 @@
 {{ with .Site.Params.favicon }}
-<link rel="shortcut icon" href="{{ . | relURL }}">
+<link rel="icon" href="{{ . | relURL }}.ico">
+<link rel="icon" href="{{ . | relURL }}.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ . | relURL }}-180.png"><!-- 180x180 -->
 {{ end }}
