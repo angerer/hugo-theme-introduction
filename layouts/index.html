@@ -19,10 +19,9 @@
             <!-- Super sweet Hero body title -->
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    {{ with .Site.Params.favicon }}
+                    {{ with .Site.Params.homeLogo }}
                     <img class="img-responsive" src="{{ . | relURL }}" alt="Site Logo">
                     {{ end }}
-                    
                     <!-- Title and tagline -->
                     <h1 class="bold-title {{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in one{{ end }}"> 
                         {{ .Title | markdownify }}
